@@ -14,12 +14,18 @@
  @font-face { font-family: Drugs; src: url('Drugs.otf'); }
 body {
 	font-family: 'Drugs', sans-serif;
+	font-size: 16px;
+}
+
+.placement {
+	margin-bottom: 10px;
 	text-align: center;
 }
 
-h1 {
+h2 {
 	font-size: 50px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	font-weight: 700;
 }
 
 hr {
@@ -39,18 +45,48 @@ p {
 	margin-top: 5px;
 	margin-bottom: 10px;
 	color: rgba(0, 0, 0, 0.7);
+	font-weight: 800;
 }
 
 .subtitle {
-	font-weight: bold;
-	font-size: 35px;
+	text-align: center;
 }
 
 h2 {
 	font-size: 40px;
 }
 
-.logo { width: 200px;}
+img { 
+	margin-bottom: 5px;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+.logo { width: 250px;}
+.center { text-align: center;}
 
 .figure-caption { font-size: 20px; font-weight: bold; margin-bottom: 15px;}
 
@@ -58,94 +94,126 @@ h2 {
 </head>
 <body>
 
-<img class="logo" src="images/logo.png" />
 <div class="container">
-	<hr/ >
-	<p class="subtitle">Here are some of our recent placements in tv, film, and advertisements from our roster of arists, writers, and producers.</p>
-	<hr />
-
+	<div class="center"><img class="logo" src="images/logo.png" /></div>
+	<hr/>
 	<div class="row">
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/powerrangers.png" class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">Power Rangers</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/diaryofawimpy.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">Diary of a Wimpy Kid</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/transformers.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">Transformers: The Last Knight</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/apple-keynote.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">Apple</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/sleepys.jpg"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">Sleepys</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/americas-got-talent.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">America's Got Talent</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/dancing-with-the-stars.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">Dancing with the Stars</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/ncaa.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">NCAA March Madness</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/llws.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">ESPN</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/asda.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">ASDA</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/chase.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">Chase Bank</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/sprint.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">Sprint</figcaption>
-		</figure>
-		<figure class="col-md-4 figure">
-		  <img src="/images/work/hbo.png"  class="figure-img img-fluid img-rounded img-responsive" />
-		  <figcaption class="figure-caption text-xs-right">HBO</figcaption>
-		</figure>
+		<div class="col-md-6 update">
+				<h2>Recent Updates</h2>
+
+			<p>Following a successful placement in the Diary of a Wimpy Kid trailer, 20th Century Fox requested Animal Fiction's "Enjoy the Ride" to be the song for the end title.</p>
+		</div>
+		<div class="col-md-6" align="center">
+				<iframe width="375" height="200" src="https://www.youtube.com/embed/r7PLDbPPL7w?ecver=1" frameborder="0" allowfullscreen></iframe>
+		</div>
 	</div>
-
-	<hr/ >
-	<h2>Contact </h2>
-<p>David Lovett - <a href="mailto:david@enduranceent.com">david@enduranceent.com</a></p>
-<p>Mathew Barletta - <a href="mailto:mathew@enduranceent.com">mathew@enduranceent.com</a></p>
-<p>Brett Carpenter - <a href="mailto:brett@enduranceent.com">brett@enduranceent.com</a></p>
-<hr />
+	<!-- <p class="subtitle">Here are some of our recent placements in tv, film, and advertisements from our roster of arists, writers, and producers.</p> -->
+	<hr/>
+	<h2>Recent Placements</h2>
+	<div class="row">
+		<div class="col-md-4 placement">
+			<img src="/images/work/powerrangers.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				Power Rangers End Title <br/> The Score - Unstoppable
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/diaryofawimpy.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				Diary of a Wimpy Kid End Title / Trailer <br/> Animal Fiction - Enjoy the Ride
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/transformers.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				Transformers End Title / Trailer <br/> The Score - Unstoppable
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/apple-keynote.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				Apple Keynote <br/> Animal Fiction - Sun's coming up
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/sleepys.jpg" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				Sleepys Commercial <br/> 1985 - Dreams come true
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/americas-got-talent.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				America's Got Talent Promo <br/> The Score - Legend
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/dancing-with-the-stars.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				Dancing with the Stars Promo <br/> KARRA - Saving Light
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/ncaa.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				NCAA Promo <br/> The Score - Legend
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/llws.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				ESPN <br/> 1985 - Little League World Series
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/asda.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				ASDA <br/> The Score - Oh My Love
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/chase.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				Chase Bank
+			</div>
+		</div>
+		<div class="col-md-4 placement">
+			<img src="/images/work/tmobile.png" class="figure-img img-fluid img-rounded img-responsive" />
+			<div>
+				T-mobile <br/> The Bonjeurs - I Like It Cold
+			</div>
+		</div>
+	</div>
+	<hr/>
+	<h2>Featured Artists</h2>
+	<a target="_blank" href="https://enduranceentertainment.box.com/s/7eeyull32sreip3xzjvmrxsfskfwe2za">
+		<div class="row">
+			<div class="col-md-4 placement">
+				<img src="/images/work/thescore.jpg" class="figure-img img-fluid img-rounded img-responsive" />
+				<div>
+					The Score
+				</div>
+			</div>
+			<div class="col-md-4 placement">
+				<img src="/images/work/animal-fiction.jpg" class="figure-img img-fluid img-rounded img-responsive" />
+				<div>
+					Animal Fiction
+				</div>
+			</div>
+			<div class="col-md-4 placement">
+				<img src="/images/work/karra.jpg" class="figure-img img-fluid img-rounded img-responsive" />
+				<div>
+					KARRA
+				</div>
+			</div>
+		</div>
+	</a>
+	<hr/>
+	<h2>Contacts </h2>
+	<p>David Lovett - <a href="mailto:david@enduranceent.com">david@enduranceent.com</a></p>
+	<p>Mathew Barletta - <a href="mailto:mathew@enduranceent.com">mathew@enduranceent.com</a></p>
+	<p>Brett Carpenter - <a href="mailto:brett@enduranceent.com">brett@enduranceent.com</a></p>
 </div>
-
-<style>
-  .thumbnail.with-caption {
-    display: inline-block;
-    background: #f5f5f5;
-  }
-  .thumbnail.with-caption p {
-    margin: 0;
-    padding-top: 0.5em;
-  }
-  .thumbnail.with-caption small:before {
-    content: '\2014 \00A0';
-  }
-  .thumbnail.with-caption small {
-    width: 100%;
-    text-align: right;
-    display: inline-block;
-    color: #999;
-  }
-</style>
 
 </body>
 </html>
